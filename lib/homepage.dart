@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           hintText: 'Tell us!',
                         ),
-                        cursorColor: kAppBarColour,
+                        cursorColor: kCursorColour,
                       ),
                     ),
                     AvatarGlow(
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                         color: kMicBackgroundColour,
                         shape: CircleBorder(
                           side: BorderSide(
-                            color: kMicBorderColour,
+                            color: kCursorColour,
                             width: 2.0,
                           ),
                         ),
@@ -109,7 +109,21 @@ class _HomePageState extends State<HomePage> {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          title: Text('Please enter some text!'),
+                          backgroundColor: kAlertDialogColour,
+                          title: Text(
+                            'Please enter some text!',
+                            style: kAlertDialogTextStyle,
+                            textAlign: TextAlign.center,
+                          ),
+                          content: Image(
+                            image: AssetImage('images/cat.gif'),
+                          ),
+                          elevation: 24.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(10.0),
+                            ),
+                          ),
                         );
                       },
                     );

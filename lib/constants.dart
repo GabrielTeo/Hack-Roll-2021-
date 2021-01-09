@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 const kBottomContainerHeight = 65.0;
@@ -6,7 +8,8 @@ const kAppBarColour = Color(0xFF032e14);
 const kBottomContainerColour = Color(0x774CAF50);
 const kCardColour = Color(0x701a4c40);
 const kMicBackgroundColour = Color(0x33FFFFFF);
-const kMicBorderColour = Color(0xFF1eae50);
+const kCursorColour = Color(0xFF1eae50);
+const kAlertDialogColour = Color(0xA0424242);
 
 const kLabelTextStyle = TextStyle(
   fontSize: 30.0,
@@ -37,4 +40,9 @@ const kResultTextStyle = TextStyle(
 const kSongTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.bold,
+);
+
+const kAlertDialogTextStyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.w500,
 );
