@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/constants.dart';
 
 class ResultsPage extends StatelessWidget {
   ResultsPage({@required this.testWidget});
@@ -9,7 +10,10 @@ class ResultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Moodsicle'),
+        title: Text(
+          'Moodsicle',
+          style: kSubLabelTextStyle,
+        ),
       ),
       body: testWidget,
     );

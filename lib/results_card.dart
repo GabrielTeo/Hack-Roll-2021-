@@ -71,7 +71,7 @@ class ResultsCard extends StatelessWidget {
                             Text(
                               genre,
                               textAlign: TextAlign.center,
-                              style: kBodyTextStyle,
+                              style: kSongDetailsTextStyle,
                             ),
                             SizedBox(
                               height: 10.0,
@@ -79,7 +79,7 @@ class ResultsCard extends StatelessWidget {
                             Text(
                               releaseYear,
                               textAlign: TextAlign.center,
-                              style: kBodyTextStyle,
+                              style: kSongDetailsTextStyle,
                             )
                           ],
                         ),

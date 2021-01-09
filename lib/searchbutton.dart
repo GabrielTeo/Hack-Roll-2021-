@@ -29,7 +29,7 @@ class CustomButton extends StatelessWidget {
             Text(
               'Search',
               maxLines: 1,
-              style: kBodyTextStyle,
+              style: kSearchButtonTextStyle,
             ),
             SizedBox(
               width: 10.0,

@@ -69,6 +69,7 @@ class _HomePageState extends State<HomePage> {
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: TextField(
+                        style: kTextFieldStyle,
                         textAlign: TextAlign.center,
                         controller: textController,
                         decoration: InputDecoration(
@@ -76,6 +77,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                           hintText: 'Tell us!',
+                          hintStyle: kTextFieldStyle,
                         ),
                         cursorColor: kCursorColour,
                       ),
