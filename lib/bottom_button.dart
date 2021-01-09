@@ -18,7 +18,7 @@ class BottomButton extends StatelessWidget {
             style: kBodyTextStyle,
           ),
         ),
-        color: kAppBarColour,
+        color: kBottomContainerColour,
         margin: EdgeInsets.only(top: 10.0),
         padding: EdgeInsets.only(bottom: 20.0),
         width: double.infinity,

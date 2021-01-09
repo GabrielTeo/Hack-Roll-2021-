@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/display_card.dart';
 import 'bottom_button.dart';
 import 'constants.dart';
 
@@ -41,46 +42,46 @@ class ResultsCard extends StatelessWidget {
             ),
             Expanded(
               flex: 5,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    artistName.toUpperCase(),
-                    style: kResultTextStyle,
-                  ),
-                  Text(
-                    songName,
-                    style: kSongTextStyle,
-                    textAlign: TextAlign.center,
-                  ),
-                  Column(
-                    children: <Widget>[
-                      Text(
-                        genre,
-                        textAlign: TextAlign.center,
-                        style: kBodyTextStyle,
-                      ),
-                      SizedBox(
-                        height: 10.0,
-                      ),
-                      Text(
-                        releaseYear,
-                        textAlign: TextAlign.center,
-                        style: kBodyTextStyle,
-                      )
-                    ],
-                  ),
-                ],
+              child: DisplayCard(
+                colour: kCardColour,
+                cardChild: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      artistName.toUpperCase(),
+                      style: kResultTextStyle,
+                    ),
+                    Text(
+                      songName,
+                      style: kSongTextStyle,
+                      textAlign: TextAlign.center,
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text(
+                          genre,
+                          textAlign: TextAlign.center,
+                          style: kBodyTextStyle,
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Text(
+                          releaseYear,
+                          textAlign: TextAlign.center,
+                          style: kBodyTextStyle,
+                        )
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
-            BottomButton(
-                buttonTitle: 'TRY A DIFFERENT MOOD',
-                onTap: onReturn
-            )
+            BottomButton(buttonTitle: 'TRY A DIFFERENT MOOD', onTap: onReturn)
           ],
         ),
-      )
+      ),
     );
   }
 }
