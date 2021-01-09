@@ -61,66 +61,15 @@ class MusicState extends State<Music> {
       String artistName = _suggestions.tracks.track[0].artistDisplayName;
       String genre = _suggestions.tracks.track[0].genre;
       String releaseYear = _suggestions.tracks.track[0].releasedate;
-       _updateDatabase(songName, artistName, genre, releaseYear);
+      _updateDatabase(songName, artistName, genre, releaseYear);
       return Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Expanded(
-              child: Container(
-                padding: EdgeInsets.all(15.0),
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  'Here are your music suggestions',
-                  style: kBodyTextStyle,
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 5,
-              child: ResultsCard(
-                colour: kCardColour,
-                cardChild: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      artistName.toUpperCase(),
-                      style: kResultTextStyle,
-                    ),
-                    Text(
-                      songName,
-                      style: kSongTextStyle,
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Text(
-                          genre,
-                          textAlign: TextAlign.center,
-                          style: kBodyTextStyle,
-                        ),
-                        SizedBox(
-                          height: 10.0,
-                        ),
-                        Text(
-                          releaseYear,
-                          textAlign: TextAlign.center,
-                          style: kBodyTextStyle,
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            BottomButton(
-              buttonTitle: 'TRY A DIFFERENT MOOD',
-              onTap: () {
-                Navigator.pop(context);
-              },
-            )
-          ],
+        body: ResultsCard(
+          colour: kCardColour,
+          artistName: artistName,
+          genre: genre,
+          releaseYear: releaseYear,
+          songName: songName,
+          onReturn: () => Navigator.pop(context),
         ),
       );
     }
@@ -132,7 +81,9 @@ class MusicState extends State<Music> {
     int currentTimeToSave = Date(dateTime: currentTime).getDatabaseFormat();
     int valence = sentimentScore.getValenceScore();
     int arousal = sentimentScore.getArousalScore();
-    List<String> keywordsToMerge = sentimentScore.getKeywords();
+    List<String> pl = sentimentScore.getPositiveKeywords();
+    List<String> nl = sentimentScore.getNegativeKeywords();
+    List<String> keywordsToMerge = pl + nl;
     String mergedKeywords = "";
     for (int i = 0; i < keywordsToMerge.length; i++) {
       String toAddDivider = keywordsToMerge[i] + "|";

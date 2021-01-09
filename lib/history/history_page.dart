@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/constants.dart';
 import 'package:flutterapp/date.dart';
 import 'package:flutterapp/history/history_tile.dart';
+import 'package:flutterapp/results_card.dart';
 import 'package:flutterapp/utils/data.dart';
 import 'package:flutterapp/utils/database.dart';
 
@@ -66,7 +67,19 @@ class _HistoryPageState extends State<HistoryPage> {
 
           });
         },
-        onClick: () {},
+        onClick: () => {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (context) => ResultsCard(
+                colour: kCardColour,
+              artistName: currentData.artistName,
+              genre: currentData.genre,
+              songName: currentData.songName,
+              releaseYear: currentData.releaseYear,
+              onReturn: () => Navigator.pop(context),
+            ),
+            ),
+          )
+        },
         keywords: splitKeywords,
       );
 

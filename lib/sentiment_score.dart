@@ -30,14 +30,25 @@ class SentimentScore {
   }
 
   List<String> getPositiveKeywords() {
-    return analysis["positive"];
+    List<dynamic> l =  analysis["good words"];
+    List<String> results = [];
+    l.forEach((element) {
+      results.add(element[0].toString());
+    });
+    return results;
   }
 
   List<String> getNegativeKeywords() {
-    return analysis["negative"];
+    List<dynamic> l = analysis["badword"];
+    List<String> results = [];
+    l.forEach((element) {
+      results.add(element[0].toString());
+    });
+    return results;
   }
 
-  List<String> getKeywords() {
+
+  List<String> getTokens() {
     return analysis["words"];
   }
 }
