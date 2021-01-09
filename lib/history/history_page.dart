@@ -5,7 +5,13 @@ import 'package:flutterapp/history/history_tile.dart';
 import 'package:flutterapp/utils/data.dart';
 import 'package:flutterapp/utils/database.dart';
 
-class HistoryPage extends StatelessWidget {
+class HistoryPage extends StatefulWidget {
+  @override
+  _HistoryPageState createState() => _HistoryPageState();
+}
+
+class _HistoryPageState extends State<HistoryPage> {
+
   @override
   Widget build(BuildContext context) {
     var futureBuilder = new FutureBuilder(
@@ -54,7 +60,12 @@ class HistoryPage extends StatelessWidget {
         dateTime: Date.getDateFromDatabase(currentData.dateTime),
         valence: currentData.valenceScore,
         arousal: currentData.arousalScore,
-        onDelete: () => DBProvider.db.deleteData(currentData.id),
+        onDelete: () {
+          DBProvider.db.deleteData(currentData.id);
+          setState(() {
+
+          });
+        },
         onClick: () {},
         keywords: splitKeywords,
       );

@@ -79,6 +79,12 @@ class _HistoryTileState extends State<HistoryTile> {
     );
   }
 
+  void _delete() {
+    widget.onDelete();
+    Navigator.of(context).pop();
+  }
+
+
   Widget _buildPopupDialog(BuildContext context) {
     return new AlertDialog(
       title: const Text('Delete History?'),
@@ -91,7 +97,7 @@ class _HistoryTileState extends State<HistoryTile> {
           child: const Text('No'),
         ),
         new FlatButton(
-          onPressed: widget.onDelete,
+          onPressed: _delete,
           textColor: Theme.of(context).primaryColor,
           child: const Text('Yes'),
         ),
