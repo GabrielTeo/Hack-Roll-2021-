@@ -39,10 +39,11 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
-                image: DecorationImage(
-              image: AssetImage('images/home_background.jpg'),
-              fit: BoxFit.cover,
-            )),
+              image: DecorationImage(
+                image: AssetImage('images/home_background_1.gif'),
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -87,6 +88,13 @@ class _HomePageState extends State<HomePage> {
                       repeatPauseDuration: const Duration(milliseconds: 100),
                       repeat: true,
                       child: FlatButton(
+                        color: kMicBackgroundColour,
+                        shape: CircleBorder(
+                          side: BorderSide(
+                            color: kMicBorderColour,
+                            width: 2.0,
+                          ),
+                        ),
                         onPressed: _listen,
                         child: Icon(_isListening ? Icons.mic : Icons.mic_none),
                       ),

@@ -12,8 +12,8 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      fillColor: Colors.green,
-      splashColor: Colors.greenAccent,
+      fillColor: kBottomContainerColour,
+      splashColor: Color(0x6669F0AE),
       child: Padding(
         padding: EdgeInsets.all(10.0),
         child: Row(

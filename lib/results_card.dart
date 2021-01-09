@@ -26,59 +26,73 @@ class ResultsCard extends StatelessWidget {
     return GestureDetector(
       onTap: onPress,
       child: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        body: Stack(
           children: <Widget>[
-            Expanded(
-              child: Container(
-                padding: EdgeInsets.all(15.0),
-                alignment: Alignment.bottomLeft,
-                child: Text(
-                  'Here are your music suggestions',
-                  style: kBodyTextStyle,
-                ),
-              ),
+            Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                image: AssetImage('images/results_background_1.gif'),
+                fit: BoxFit.cover,
+              )),
             ),
-            Expanded(
-              flex: 5,
-              child: DisplayCard(
-                colour: kCardColour,
-                cardChild: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      artistName.toUpperCase(),
-                      style: kResultTextStyle,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(15.0),
+                    alignment: Alignment.bottomLeft,
+                    child: Text(
+                      'Here are your music suggestions',
+                      style: kBodyTextStyle,
                     ),
-                    Text(
-                      songName,
-                      style: kSongTextStyle,
-                      textAlign: TextAlign.center,
-                    ),
-                    Column(
+                  ),
+                ),
+                Expanded(
+                  flex: 5,
+                  child: DisplayCard(
+                    colour: kCardColour,
+                    cardChild: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          genre,
-                          textAlign: TextAlign.center,
-                          style: kBodyTextStyle,
-                        ),
-                        SizedBox(
-                          height: 10.0,
+                          artistName.toUpperCase(),
+                          style: kResultTextStyle,
                         ),
                         Text(
-                          releaseYear,
+                          songName,
+                          style: kSongTextStyle,
                           textAlign: TextAlign.center,
-                          style: kBodyTextStyle,
-                        )
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Text(
+                              genre,
+                              textAlign: TextAlign.center,
+                              style: kBodyTextStyle,
+                            ),
+                            SizedBox(
+                              height: 10.0,
+                            ),
+                            Text(
+                              releaseYear,
+                              textAlign: TextAlign.center,
+                              style: kBodyTextStyle,
+                            )
+                          ],
+                        ),
                       ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
+                BottomButton(
+                  buttonTitle: 'TRY A DIFFERENT MOOD',
+                  onTap: onReturn,
+                ),
+              ],
             ),
-            BottomButton(buttonTitle: 'TRY A DIFFERENT MOOD', onTap: onReturn)
           ],
         ),
       ),
