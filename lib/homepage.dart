@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Expanded(
-                flex: 7,
+                flex: 6,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
