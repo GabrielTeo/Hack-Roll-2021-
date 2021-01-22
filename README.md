@@ -1,7 +1,7 @@
 <h1 align="center">
   <a href="https://github.com/GabrielTeo/Moodsicle"><img src="images/moodsicle_banner.png" alt="Moodsicle" width="100%"></a>
 </h1>
-<h3 align="center">Find the right song for the right mood, anytime</h3>
+<h3 align="center">Find the right song for the right mood, anytime.</h3>
 
 <p align="center">
 	<a href = "https://devpost.com/software/moodsicle"><img src="https://img.shields.io/badge/Devpost-Moodsicle-003E54"></a>
@@ -12,7 +12,7 @@
     <a href = "https://pub.dev/packages/sqflite"><img src="https://img.shields.io/badge/Powered by-sqflite-52D6C4?logo=dart"></a>
 </p>
 
-<h4 align="center">A Hack&Roll 2021 Project by Team FlutterAway (<a href="https://github.com/GabrielTeo">@GabrielTeo</a>, <a href="https://github.com/todoge">@todoge</a>, <a href="https://github.com/VaishakAnand">@VaishakAnand</a> and <a href="https://github.com/zongxian-ctrl">@zongxian-ctrl</a>)</h4>
+<h4 align="center">A Hack&Roll 2021 Project by Team FlutterAway (<a href="https://github.com/GabrielTeo">@GabrielTeo</a>, <a href="https://github.com/todoge">@todoge</a>, <a href="https://github.com/VaishakAnand">@VaishakAnand</a> and <a href="https://github.com/zongxian-ctrl">@zongxian-ctrl</a>).</h4>
 
 ## _Moodsicle_ - Music for every mood. :headphones:
 
