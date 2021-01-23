@@ -10,6 +10,7 @@
 	<a href = "https://pub.dev/packages/sentiment_dart"><img src="https://img.shields.io/badge/Powered by-Sentiment Dart-52D6C4?logo=dart"></a>
     <a href = "https://pub.dev/packages/speech_to_text"><img src="https://img.shields.io/badge/Powered by-speech_to_text-52D6C4?logo=dart"></a>
     <a href = "https://pub.dev/packages/sqflite"><img src="https://img.shields.io/badge/Powered by-sqflite-52D6C4?logo=dart"></a>
+	<a href = "https://github.com/GabrielTeo/Moodsicle/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-1182C2?"></a>
 </p>
 
 <h4 align="center">A Hack&Roll 2021 Project by Team FlutterAway (<a href="https://github.com/GabrielTeo">@GabrielTeo</a>, <a href="https://github.com/todoge">@todoge</a>, <a href="https://github.com/VaishakAnand">@VaishakAnand</a> and <a href="https://github.com/zongxian-ctrl">@zongxian-ctrl</a>).</h4>
@@ -73,3 +74,7 @@ We welcome contributors to work on _Moodsicle_ together with us! Feel free to ma
 ## Hackathon and Learning Experience :black_nib:
 
 Visit our project's [Devpost](https://devpost.com/software/moodsicle) to learn more about what we went through in the 24 hours in building _Moodsicle_!
+
+## License :memo:
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/GabrielTeo/Moodsicle/blob/master/LICENSE) file for details.
