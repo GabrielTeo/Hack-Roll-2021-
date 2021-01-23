@@ -45,7 +45,7 @@ And that's exactly what we have done for [**Hack&Roll 2021**](https://hacknroll.
 
 ## Moodsicle's Roadmap! :world_map:
 
-* We plan to include _Spotify_'s API to link the songs to _Spotify_ so that users can open the song directly in _Spotify_.
+* We plan to include _Spotify_'s API to link the songs to _Spotify_ so that users can open the songs directly in _Spotify_.
 * We hope to include an in-app music player with full standard player functionalities (users can play and listen to songs on-the-go, as well as forward / reverse / skip tracks).
 
 ## Getting Started :beginner:
