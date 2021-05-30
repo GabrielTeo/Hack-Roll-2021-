@@ -51,7 +51,7 @@ class _HistoryPageState extends State<HistoryPage> {
   Widget createListView(BuildContext context, AsyncSnapshot snapshot) {
     List<Data> tiles = snapshot.data;
 
-    List<HistoryTile> historyTiles = List();
+    List<HistoryTile> historyTiles = [];
     for (var i = 0; i < tiles.length; i++) {
       Data currentData = tiles[i];
       List<String> splitKeywords = currentData.keywords.split("|");

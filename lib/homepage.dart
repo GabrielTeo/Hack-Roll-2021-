@@ -89,14 +89,8 @@ class _HomePageState extends State<HomePage> {
                       duration: const Duration(milliseconds: 2000),
                       repeatPauseDuration: const Duration(milliseconds: 100),
                       repeat: true,
-                      child: FlatButton(
-                        color: kMicBackgroundColour,
-                        shape: CircleBorder(
-                          side: BorderSide(
-                            color: kCursorColour,
-                            width: 2.0,
-                          ),
-                        ),
+                      child: TextButton(
+                        style: micFlatButtonStyle,
                         onPressed: _listen,
                         child: Icon(_isListening ? Icons.mic : Icons.mic_none),
                       ),

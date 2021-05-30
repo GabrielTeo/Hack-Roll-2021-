@@ -74,7 +74,14 @@ class _HistoryTileState extends State<HistoryTile> {
                 pressEnabled: false,
                 combine: ItemTagsCombine.withTextBefore,
               );
-            })
+            }),
+        SizedBox(
+          height: 3,
+        ),
+        Text(
+          '(Hold to delete)',
+          textAlign: TextAlign.right,
+        ),
       ],
     );
   }
@@ -84,22 +91,29 @@ class _HistoryTileState extends State<HistoryTile> {
     Navigator.of(context).pop();
   }
 
-
   Widget _buildPopupDialog(BuildContext context) {
     return new AlertDialog(
       title: const Text('Delete History?'),
       actions: <Widget>[
-        new FlatButton(
+        new TextButton(
           onPressed: () {
             Navigator.of(context).pop();
           },
-          textColor: Theme.of(context).primaryColor,
-          child: const Text('No'),
+          child: Text(
+            'No',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ),
-        new FlatButton(
+        new TextButton(
           onPressed: _delete,
-          textColor: Theme.of(context).primaryColor,
-          child: const Text('Yes'),
+          child: Text(
+            'Yes',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ),
       ],
     );

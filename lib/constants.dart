@@ -74,3 +74,14 @@ const kAlertDialogTextStyle = TextStyle(
   fontSize: 25.0,
   fontWeight: FontWeight.normal,
 );
+
+final ButtonStyle micFlatButtonStyle = TextButton.styleFrom(
+  primary: Colors.white,
+  backgroundColor: kMicBackgroundColour,
+  shape: CircleBorder(
+    side: BorderSide(
+      color: kCursorColour,
+      width: 2.0,
+    ),
+  ),
+);

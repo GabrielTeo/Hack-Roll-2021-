@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/api_management.dart';
-import 'package:flutterapp/bottom_button.dart';
 import 'package:flutterapp/results_card.dart';
 import 'package:flutterapp/utils/data.dart';
 import 'package:flutterapp/utils/database.dart';
@@ -11,7 +10,7 @@ import 'sentiment_score.dart';
 import 'constants.dart';
 
 class Music extends StatefulWidget {
-  String userInputText;
+  final String userInputText;
 
   Music({@required this.userInputText});
 
