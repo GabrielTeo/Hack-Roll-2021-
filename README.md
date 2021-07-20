@@ -8,8 +8,8 @@
 	<a href = "https://flutter.dev/"><img src="https://img.shields.io/badge/Made with-Flutter-47C5FB?logo=flutter"></a>
 	<a href = "http://b2b.musicovery.com/"><img src="https://img.shields.io/badge/Powered by-Musicovery-7A4CB2?"></a>
 	<a href = "https://pub.dev/packages/sentiment_dart"><img src="https://img.shields.io/badge/Powered by-Sentiment Dart-52D6C4?logo=dart"></a>
-    <a href = "https://pub.dev/packages/speech_to_text"><img src="https://img.shields.io/badge/Powered by-speech_to_text-52D6C4?logo=dart"></a>
-    <a href = "https://pub.dev/packages/sqflite"><img src="https://img.shields.io/badge/Powered by-sqflite-52D6C4?logo=dart"></a>
+	<a href = "https://pub.dev/packages/speech_to_text"><img src="https://img.shields.io/badge/Powered by-speech_to_text-52D6C4?logo=dart"></a>
+	<a href = "https://pub.dev/packages/sqflite"><img src="https://img.shields.io/badge/Powered by-sqflite-52D6C4?logo=dart"></a>
 	<a href = "https://github.com/GabrielTeo/Moodsicle/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-1182C2?"></a>
 </p>
 
@@ -24,9 +24,9 @@ We were listening to some music and were pretty tired of them, and we thought "H
 And that's exactly what we have done for [**Hack&Roll 2021**](https://hacknroll.nushackers.org/)! We have built an application that suggests music based on your current mood, regardless of the occasion! Never will you ever have the problem of surfing through endless tracks of songs just to find the right one again, all thanks to our multi-platform mobile application **Moodsicle**!
 
 <p align="center">
-  <img src="images/home_page.png" width="256" hspace="4">
-  <img src="images/results_page.png" width="256" hspace="4">
-  <img src="images/history_page.png" width="256" hspace="4">
+  <img src="images/home_page.gif" width="256" hspace="4">
+  <img src="images/results_page.gif" width="256" hspace="4">
+  <img src="images/history_page.gif" width="256" hspace="4">
 </p>
 
 ## Main Features :musical_note:
@@ -51,7 +51,7 @@ And that's exactly what we have done for [**Hack&Roll 2021**](https://hacknroll.
 
 ## Getting Started :beginner:
 
-If you want to try out _Moodsicle_, you can head over to our [Releases](https://github.com/Hack-Roll2021-FlutterAway/Moodsicle/releases) to install our latest Android APK on your Android device. However, as _Moodsicle_ is still currently in very early development, do note that we have yet to release an iOS IPA, and our releases may not be up to date with the latest version of our development as we continue to improve our application.
+If you want to try out _Moodsicle_, you can head over to our [Releases](https://github.com/GabrielTeo/Moodsicle/releases) to install our latest Android APK on your Android device. However, as _Moodsicle_ is still currently in very early development, please note that we have yet to release an iOS IPA, and our releases may not be up to date with the latest version of our development as we continue to improve our application.
 
 However, if you are a developer looking to test our application, or want to try our the latest version of our application, here are the steps required to get a debugging environment set up to run our current debug build:
 * **1.** Install the **Flutter SDK** according to the [Flutter Installation Guide](https://flutter.dev/docs/get-started/install). Ensure that `flutter doctor -v` shows no errors for the platform that you intend to test on (Android or iOS).
